@@ -6,7 +6,7 @@ ENV GO111MODULE=on \
     GOOS=linux \
     GOARCH=amd64
 
-COPY go.mod go.sum hello.go ./
+COPY go.mod hello.go ./
 
 RUN go mod download
 
